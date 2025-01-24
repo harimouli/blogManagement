@@ -26,10 +26,6 @@ app.use(session({
 app.use(express.static('public'));
 
 
-app.use(expressLayout);
-app.set("layout", "./layouts/main");
-app.set("view engine", "ejs");
-
 
 
 app.use("/", require("./server/routes/main"));
