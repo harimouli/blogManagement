@@ -5,7 +5,6 @@ const express = require('express');
 const app = express();
 
 const PORT = 5000 || process.env.PORT;
-const expressLayout = require('express-ejs-layouts');
 const cookieParser = require('cookie-parser');
 const Mongostore = require('connect-mongo');
 const session = require('express-session');
