@@ -20,7 +20,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     store: Mongostore.create({
-        mongoUrl: process.env.MONGO_URI
+        mongoUrl: process.env.MONGODB_URI
     })
 }))
 app.use(express.static('public'));
